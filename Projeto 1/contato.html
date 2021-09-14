@@ -2,20 +2,23 @@
 
 <html>
 
-    <head> 
+    <head>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+ 
         <title> UNES - Pagina principal </title>
         <meta charset="uft-8">
     </head>
 
     <body background="arquivos/fundo2.png"> 
-
-       <form>
+        <form> 
+      
         <table border="0" width="900" align="center">
             <tr>
-                <td> <img src="arquivos/logo.png" height="88">   </td>
+                <td> <img src="arquivos/logo.png" height="89">   </td>
                 <td align="right"> <a href="index.html">Home</a> |
                 <a href="quemsomos.html">Quem somos</a> |
-                <a href="contato.html">Contato</a></td>
+                <a href="!#" data-bs-toggle="modal" data-bs-target="#exampleModal">Contato</a></td>
             </tr>
 
             <tr> 
@@ -30,28 +33,29 @@
                 
             </tr>
             
+      
 
                 <tr>
                     <td>Seu e-mail:<br>
-                    <input type="text" name="email"></td>
+                    <input type="text" class="w-50 form-control" name="email"></td>
 
                 </tr>
 
                 <tr>
                     <td> Assunto: <br>
-                    <input type="text" name="assunto"></td>
+                    <input type="text" class="w-75 form-control-sm" name="assunto"></td>
 
                 </tr>
 
 
                 <tr>
                     <td>Descrição: <br>
-                    <textarea></textarea></td>
+                    <textarea class="border border-primary"> </textarea></td>
                     
                 </tr>
 
                 <tr>
-                    <td> <input type="submit" value="Enviar"> </td></td>
+                    <td> <input type="submit" class="btn btn-success" value="Enviar"> </td></td>
                 </tr>
         
             </tr>
@@ -68,12 +72,76 @@
 
     </form>
 
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <table>
+            <tr>
+                <td>Seu e-mail:<br>
+                <input type="text" class="w-50 form-control" name="email"></td>
+
+            </tr>
+
+            <tr>
+                <td> Assunto: <br>
+                <input type="text" class="w-75 form-control-sm" name="assunto"></td>
+
+            </tr>
+
+
+            <tr>
+                <td>Descrição: <br>
+                <textarea class="border border-primary"> </textarea></td>
+                
+            </tr>
+
+            <tr>
+                <td> <input type="submit" class="btn btn-success" value="Enviar"> </td></td>
+            </tr>
+    
+        </tr>
+
+        
+
+        <tr>
+            <td colspan="2" align="center"> <strong>Todos os direitos reservados   </td>
+
+        </tr>
+
+               
+    </table>
+
+</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
         
           
         
       
 
-        
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"  crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script> 
         
 
         
