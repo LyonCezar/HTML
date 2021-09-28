@@ -9,16 +9,55 @@
        
 
         <style type="text/css">
-        .top{
-            background-color: #eee;
+        .container {
+            max-width: 1200px;
+            min-width: 800px;
+            margin:0px auto;
 
+        }
+        .top{
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            height: 400px;
+            background-color: #eee;
+            
+        }
+
+        .top .top1 {            
+            background: black;
+            height: 100px;
+            width: 300px;
         }
 
         .mid {
+            position: relative;
+            height: 500px;            
             background-color: #ddd;
+
+        }
+
+        .esquerda {
+            height: 481px;
+            width: 450px;
+            position: absolute;
+            left: 0px;
+            background: violet;
+        }
+
+        .direita {
+            height: 481px;
+            width: 450px;
+            position:absolute;
+            right: 0px;
+            background: purple;
         }
 
         .bot {
+           
             background-color: #ccc;
         }
         
@@ -26,6 +65,7 @@
             color: black
         }
         .bot .bot-menu .red {
+            display:inline-block;
             background-color: red;
             height: 200px;
             width: 33%;
@@ -33,12 +73,14 @@
         }
 
         .bot .bot-menu .blue {
+            display:inline-block;
             background-color: blue;
             height: 200px;
             width: 33%;
         }
 
         .bot .bot-menu .yellow {
+            display:inline-block;
             background-color: yellow;
             height: 200px;
             width: 33%;
@@ -62,12 +104,22 @@
             
             <div class="container"> 
                 <div class="top">
-                    <h3> Area de Navegação </h3>
+                    <div class="top1">   </div>
+                    <div class="top1">   </div>
+                    <div class="top1">   </div>
+                    <div class="top1">   </div>
+                    <div class="top1">   </div>
                 </div><!--final do top --> 
             
 
                 <div class="mid">
                     <p> Conteudo da pagina </p>
+                    <div class="esquerda">
+                        <p>esquerda</p>
+                    </div>
+                    <div class="direita"> 
+                       <p>direita </p>
+                    </div>
                 </div><!--final do mid --> 
 
                 <div class="bot">
