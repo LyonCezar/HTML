@@ -1,0 +1,60 @@
+
+#fundo {
+    background-image: url(anabela/imagens/fundo.png)
+}
+
+}
+
+
+#padrao {
+ width: 900px;
+    
+
+}
+
+.menu {
+    
+    font-weight: bolder;
+    color: grey;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    background: lightgrey;
+    padding: 15px;
+}
+
+.menufinal {
+    
+    font-weight: bolder;
+    color: grey;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    background: lightgrey;
+    padding: 15px;
+    padding-right: 222px;
+}
+
+.conteudo {
+    width: 880px;
+    background: white;
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.titulos {    
+    background: white;
+    width: 860px;
+    font-size: 25px;
+    color: purple;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.assinatura {
+    padding-left: 15px;
+    padding-top: 20px;
+    font-weight: bolder;
+    align-items: center;
+}
